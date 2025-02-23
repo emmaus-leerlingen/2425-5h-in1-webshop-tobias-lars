@@ -1,7 +1,7 @@
 /* all pages */
 body {
 
-  background-color:aqua
+  background-color:rgb(174, 207, 230)
 
 }
 footer {
@@ -18,8 +18,6 @@ footer {
 }
 
 .shop-button {
-  color:blueviolet
-  front-size: 15px;
   margin-top: -4px;
 }
 
@@ -49,6 +47,7 @@ footer {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
 
 .product img {
   margin: auto;
