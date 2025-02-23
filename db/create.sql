@@ -10,6 +10,7 @@ CREATE TABLE products (
   price NUMERIC(10, 2),
   voorraad NUMERIC(10),
   verzendkosten NUMERIC(10),
+  productnummer NUMMERIC(10),
   catogories_id INTEGER,
   beoordeling_id INTEGER,
   products_id INTEGER,
@@ -52,18 +53,18 @@ CREATE TABLE geschiktheid (
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
-insert into products (products_id, name, description, code, price, voorraad, verzendkosten, catogories_id, beoordeling_id) values (1, 'Hoodie rood', 'Rode royalistiq hoodie, groot logo in het midden.', '816905633-0', 21, 20, 3, 1, 1);
-insert into products (products_id, name, description, code, price, voorraad, verzendkosten, catogories_id, beoordeling_id) values (2, 'Hoodie blauw', 'Blauwe royalistiq hoodie, groot logo in het midden.', '077030122-3', 21, 26, 3, 1, 2);
-insert into products (products_id, name, description, code, price, voorraad, verzendkosten, catogories_id, beoordeling_id) values (3, 'Hoodie zwart', 'zwarte royalistiq hoodie, groot logo in het midden.', '445924201-X', 21, 8, 3, 1, 2);
-insert into products (products_id, name, description, code, price, voorraad, verzendkosten, catogories_id, beoordeling_id) values (4, 'T-shirt rood', 'rood royalistiq t-shirt, goede kwaliteit, logo in het midden.', '693155505-7', 14, 30, 3, 2, 1);
-insert into products (products_id, name, description, code, price, voorraad, verzendkosten, catogories_id, beoordeling_id) values (5, 'T-shirt blauw', 'blauw royalistiq t-shirt, goede kwaliteit, logo in het midden.', '686928463-6', 14, 22, 3, 2, 1);
-insert into products (products_id, name, description, code, price, voorraad, verzendkosten, catogories_id, beoordeling_id) values (6, 'T-shirt zwart', 'zwart royalistiq t-shirt, goede kwaliteit, logo in het midden.', '492662523-7', 14, 32, 3, 2, 1);
-insert into products (products_id, name, description, code, price, voorraad, verzendkosten, catogories_id, beoordeling_id) values (7, 'Pet rood', 'rode royalistiq pet, zit comfortabel, logo in het midden.', '003832762-4', 9, 8, 3, 3, 1);
-insert into products (products_id, name, description, code, price, voorraad, verzendkosten, catogories_id, beoordeling_id) values (8, 'Pet blauw', 'blauwe royalistiq pet, zit comfortabel, logo in het midden.', '578834325-2', 9, 30, 3, 3, 3);
-insert into products (products_id, name, description, code, price, voorraad, verzendkosten, catogories_id, beoordeling_id) values (9, 'Pet zwart', 'zwarte royalistiq pet, zit comfortabel, logo in het midden.', '5674821169-5', 9, 21, 3, 3, 2);
-insert into products (products_id, name, description, code, price, voorraad, verzendkosten, catogories_id, beoordeling_id) values (10 ,'Het grote royalistiq boek', 'het al zo grote royalistiq boek over de youtube carrière van royalistiq .', '882374623-1', 19.99, 27, 3, 4, 2);
-insert into products (products_id, name, description, code, price, voorraad, verzendkosten, catogories_id, beoordeling_id) values (11, 'Etui', 'royalistiq etui, veel ruimte, handig voor op school.', '849275978-6', 8.50, 42, 3, 4, 4);
-insert into products (products_id, name, description, code, price, voorraad, verzendkosten, catogories_id, beoordeling_id) values (12, 'Exlusive bandana', 'de legendarische OG royalistiq bandana, gedragen door royalistiq in het royalistiq live-event', '654890345-9', 50, 3, 3, 4, 1);
+insert into products (products_id, name, description, code, price, voorraad, verzendkosten, productnummer, catogories_id, beoordeling_id) values (1, 'Hoodie rood', 'Rode royalistiq hoodie, groot logo in het midden.', '816905633-0', 21, 20, 3, 134, 1, 1);
+insert into products (products_id, name, description, code, price, voorraad, verzendkosten, productnummer, catogories_id, beoordeling_id) values (2, 'Hoodie blauw', 'Blauwe royalistiq hoodie, groot logo in het midden.', '077030122-3', 21, 26, 3, 176, 1, 2);
+insert into products (products_id, name, description, code, price, voorraad, verzendkosten, productnummer, catogories_id, beoordeling_id) values (3, 'Hoodie zwart', 'zwarte royalistiq hoodie, groot logo in het midden.', '445924201-X', 21, 8, 3, 124, 1, 2);
+insert into products (products_id, name, description, code, price, voorraad, verzendkosten, productnummer, catogories_id, beoordeling_id) values (4, 'T-shirt rood', 'rood royalistiq t-shirt, goede kwaliteit, logo in het midden.', '693155505-7', 14, 30, 3, 592, 2, 1);
+insert into products (products_id, name, description, code, price, voorraad, verzendkosten, productnummer, catogories_id,  beoordeling_id) values (5, 'T-shirt blauw', 'blauw royalistiq t-shirt, goede kwaliteit, logo in het midden.', '686928463-6', 14, 22, 3, 578, 2, 1);
+insert into products (products_id, name, description, code, price, voorraad, verzendkosten, productnummer, catogories_id, beoordeling_id) values (6, 'T-shirt zwart', 'zwart royalistiq t-shirt, goede kwaliteit, logo in het midden.', '492662523-7', 14, 32, 3, 583, 2, 1);
+insert into products (products_id, name, description, code, price, voorraad, verzendkosten, productnummer, catogories_id, beoordeling_id) values (7, 'Pet rood', 'rode royalistiq pet, zit comfortabel, logo in het midden.', '003832762-4', 9, 8, 3, 266, 3, 1);
+insert into products (products_id, name, description, code, price, voorraad, verzendkosten, productnummer, catogories_id, beoordeling_id) values (8, 'Pet blauw', 'blauwe royalistiq pet, zit comfortabel, logo in het midden.', '578834325-2', 9, 30, 3, 229, 3, 3);
+insert into products (products_id, name, description, code, price, voorraad, verzendkosten, productnummer, catogories_id, beoordeling_id) values (9, 'Pet zwart', 'zwarte royalistiq pet, zit comfortabel, logo in het midden.', '5674821169-5', 9, 21, 3, 255, 3, 2);
+insert into products (products_id, name, description, code, price, voorraad, verzendkosten, productnummer, catogories_id, beoordeling_id) values (10 ,'Het grote royalistiq boek', 'het al zo grote royalistiq boek over de youtube carrière van royalistiq .', '882374623-1', 19.99, 27, 3, 624, 4, 2);
+insert into products (products_id, name, description, code, price, voorraad, verzendkosten, productnummer, catogories_id, beoordeling_id) values (11, 'Etui', 'royalistiq etui, veel ruimte, handig voor op school.', '849275978-6', 8.50, 42, 3, 488, 4, 4);
+insert into products (products_id, name, description, code, price, voorraad, verzendkosten, productnummer, catogories_id, beoordeling_id) values (12, 'Exlusive bandana', 'de legendarische OG royalistiq bandana, gedragen door royalistiq in het royalistiq live-event', '654890345-9', 50, 3, 3, 738, 4, 1);
 
 insert into catogories (catogories_id, name) values (1, 'Hoodies');
 insert into catogories (catogories_id, name) values (2, 'T-shirts');
